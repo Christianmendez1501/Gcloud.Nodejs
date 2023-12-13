@@ -1,0 +1,38 @@
+steps:
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['config', 'set', 'project', 'optimum-rock-404123']
+
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/$PROJECT_ID/repo-imagenes/server-imagen:1.0', '-f', 'server/Dockerfile', '.']
+
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-west1-docker.pkg.dev/$PROJECT_ID/repo-imagenes/server-imagen:1.0']
+
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: bash
+  args: [
+    "-c",
+    "gcloud run deploy react-nodejs-cloudbuilds-server 
+    --image=europe-west1-docker.pkg.dev/$PROJECT_ID/repo-imagenes/server-imagen:1.0 
+    --region=europe-west1 
+    --platform=managed 
+    --allow-unauthenticated 
+    --port=3000 
+    --update-env-vars DB_URL_ATLAS=$$DB_URL_ATLAS"
+  ]
+  
+  secretEnv: [
+    'DB_URL_ATLAS'
+  ]
+
+images:
+- 'europe-west1-docker.pkg.dev/$PROJECT_ID/repo-imagenes/server-imagen:1.0'
+
+availableSecrets:
+  secretManager:
+    - versionName: projects/978880424422/secrets/connection-mongo/versions/1
+      env: 'DB_URL_ATLAS'
