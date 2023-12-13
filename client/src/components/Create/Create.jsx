@@ -20,9 +20,7 @@ function Create() {
     };
 
     try {
-      const response = await axios.post(`${backendUrl}/api/users/create`,
-        newUser
-      );
+      const response = await axios.post(`${backendUrl}/api/users/create`, newUser);
       console.log("Usuario creado exitosamente");
       setNewUser(response.data);
     } catch (error) {
@@ -35,12 +33,9 @@ function Create() {
   };
 
   return (
-    
-    <div className="botones">
-      
+    <div className="create-form">
       <form onSubmit={handleSubmit}>
-      
-        <div>
+        <div className="form-group">
           <label htmlFor="name">Nombre:</label>
           <input
             type="text"
@@ -49,7 +44,7 @@ function Create() {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -62,15 +57,18 @@ function Create() {
       </form>
 
       {newUser && (
-        <div>
-          
+        <div className="user-created">
+          <p>Usuario creado exitosamente</p>
         </div>
       )}
       <div>
-      <Link to="/database" className="links" > Consultar usuarios</Link>
+        <Link to="/database" className="link-button">
+          Consultar usuarios
+        </Link>
       </div>
     </div>
   );
 }
 
 export default Create;
+
