@@ -1,5 +1,5 @@
 # Proyecto de despliegue de aplicacion🌀.
-![React Icon](https://reactjs.org/favicon.ico) ![Node.js Icon](https://nodejs.org/static/images/logo.svg) ![MongoDB Icon](https://img.icons8.com/color/96/000000/mongodb.png) ![GCP Icon](https://img.icons8.com/color/96/000000/google-cloud.png)
+* ![React Icon](https://reactjs.org/favicon.ico) ![Node.js Icon](https://nodejs.org/static/images/logo.svg) ![MongoDB Icon](https://img.icons8.com/color/96/000000/mongodb.png) ![GCP Icon](https://img.icons8.com/color/96/000000/google-cloud.png)
 
 
 ### Introducción al Proyecto 🚀
