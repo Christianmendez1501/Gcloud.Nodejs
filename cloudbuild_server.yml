@@ -5,7 +5,7 @@ steps:
 
   # Construye la imagen del contenedor
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/optimum-rock-404123/app', './cloud_run']
+    args: ['build', '-t', 'gcr.io/optimum-rock-404123/app', 'server/Dockerfile', '.']
 
   # Sube la imagen al Container Registry
   - name: 'gcr.io/cloud-builders/docker'
