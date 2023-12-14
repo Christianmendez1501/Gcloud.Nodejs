@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const backendUrl = '';
+const backendUrl = 'https://react-nodejs-cloudbuilds-server-5txgpbv7fq-ew.a.run.app';
 
 function Create() {
   const [id, setId] = useState("");
