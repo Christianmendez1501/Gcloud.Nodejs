@@ -5,11 +5,11 @@ steps:
 
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-client:$COMMIT_SHA', '-f', 'client/Dockerfile', '.']
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-server:$COMMIT_SHA', '-f', 'client/Dockerfile', '.']
 
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-client:$COMMIT_SHA']
+  args: ['push', 'europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-server:$COMMIT_SHA']
 
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -17,7 +17,7 @@ steps:
   args: [
     "-c",
     "gcloud run deploy react-nodejs-cloudbuilds-client 
-    --image=europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-client:$COMMIT_SHA
+    --image=europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-server:$COMMIT_SHA
     --region=europe-west1 
     --platform=managed 
     --allow-unauthenticated 
@@ -25,4 +25,4 @@ steps:
   ]
 
 images:
-- 'europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-client:$COMMIT_SHA'
+- 'europe-west1-docker.pkg.dev/$PROJECT_ID/users-app-server:$COMMIT_SHA'
