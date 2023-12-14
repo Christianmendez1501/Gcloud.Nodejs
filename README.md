@@ -2,8 +2,6 @@
 ![GCP Icon](https://img.icons8.com/color/96/000000/google-cloud.png) ![React Icon](https://reactjs.org/favicon.ico)  ![MongoDB Icon](https://img.icons8.com/color/96/000000/mongodb.png) ![Node.js Icon](https://nodejs.org/static/images/logo.svg) ![Docker Icon](https://www.vectorlogo.zone/logos/google_cloud_run/google_cloud_run-icon.svg) ![Docker](https://www.vectorlogo.zone/logos/docker/docker-icon.svg)
 
 
-
-
 ### Introducción al Proyecto 🚀
 ¡Bienvenido al emocionante proyecto de implementación en la nube de una aplicación web con React, Node.js y MongoDB! 
 
@@ -13,7 +11,7 @@
 ￼
 Desde el equipo de desarrollo full-stack, nos llega una aplicación deslumbrante con tecnologías modernas. La misión: desplegarla en dos instancias de Cloud Run y garantizar la conectividad perfecta entre todas las partes.
 
-![react](img/planteamiento.png)
+![Node](img/12.gif)
 
 ## Estrategia de Resolución 🛠️
 
