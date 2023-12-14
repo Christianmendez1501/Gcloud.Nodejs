@@ -14,19 +14,17 @@ steps:
   # Implementa la imagen en Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
-        - run
-        - deploy
-        - myservice
-        - --image=gcr.io/optimum-rock-404123/app
-        - --region=europe-west1
-        - --platform=managed
-        - --allow-unauthenticated
-        - --port=5000
-        - --update-env-vars DB_URL_ATLAS=$$DB_URL_ATLAS"
-  
-  secretEnv: [
-    'DB_URL_ATLAS'
-  ]
+      - run
+      - deploy
+      - myservice
+      - --image=gcr.io/optimum-rock-404123/app
+      - --region=europe-west1
+      - --platform=managed
+      - --allow-unauthenticated
+      - --port=5000
+      - --update-env-vars DB_URL_ATLAS=$$DB_URL_ATLAS
+    secretEnv:
+      - 'DB_URL_ATLAS'
 
 availableSecrets:
   secretManager:
