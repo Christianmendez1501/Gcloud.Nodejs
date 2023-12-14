@@ -22,7 +22,7 @@ steps:
         - --platform=managed
         - --allow-unauthenticated
         - --port=5000
-        -  --update-env-vars DB_URL_ATLAS=$$DB_URL_ATLAS"
+        - --update-env-vars DB_URL_ATLAS=$$DB_URL_ATLAS"
   
   
   secretEnv: [
