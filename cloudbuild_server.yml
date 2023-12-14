@@ -24,7 +24,6 @@ steps:
         - --port=5000
         - --update-env-vars DB_URL_ATLAS=$$DB_URL_ATLAS"
   
-  
   secretEnv: [
     'DB_URL_ATLAS'
   ]
