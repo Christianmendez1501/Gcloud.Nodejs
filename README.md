@@ -1,5 +1,12 @@
 # Proyecto de despliegue de aplicacion🌀.
-![GCP Icon](https://img.icons8.com/color/96/000000/google-cloud.png) ![React Icon](https://reactjs.org/favicon.ico)  ![MongoDB Icon](https://img.icons8.com/color/96/000000/mongodb.png) ![Node.js Icon](https://nodejs.org/static/images/logo.svg) ![Docker Icon](https://www.vectorlogo.zone/logos/google_cloud_run/google_cloud_run-icon.svg) ![Docker](https://www.vectorlogo.zone/logos/docker/docker-icon.svg)
+<div align="center">
+  <img src="https://img.icons8.com/color/96/000000/google-cloud.png" alt="GCP Icon">
+  <img src="https://reactjs.org/favicon.ico" alt="React Icon">
+  <img src="https://img.icons8.com/color/96/000000/mongodb.png" alt="MongoDB Icon">
+  <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Icon">
+  <img src="https://www.vectorlogo.zone/logos/google_cloud_run/google_cloud_run-icon.svg" alt="Docker Icon">
+  <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker">
+</div>
 
 
 ### Introducción al Proyecto 🚀
