@@ -1,10 +1,12 @@
 # Proyecto de despliegue de aplicacion🌀.
-![GCP Icon](https://img.icons8.com/color/96/000000/google-cloud.png) 
-![React Icon](<img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100">)  
-![MongoDB Icon](<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/398b19b1-9aae-4c1f-8bc0-d172a2c08d68" width="100">) 
-![Node.js Icon](<img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="100">) 
-![google Icon](https://www.vectorlogo.zone/logos/google_cloud_run/google_cloud_run-icon.svg) 
-![Docker](https://www.vectorlogo.zone/logos/docker/docker-icon.svg)
+<p align="center">
+  <img src="https://img.icons8.com/color/96/000000/google-cloud.png" alt="GCP Icon">
+  <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/398b19b1-9aae-4c1f-8bc0-d172a2c08d68" width="100"> 
+  <img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="100">
+  <img src="https://www.vectorlogo.zone/logos/google_cloud_run/google_cloud_run-icon.svg" alt="Google Cloud Run Icon">
+  <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker Icon">
+</p>
 
 ### Introducción al Proyecto 🚀
 ¡Bienvenido al emocionante proyecto de implementación en la nube de una aplicación web con React, Node.js y MongoDB! 
